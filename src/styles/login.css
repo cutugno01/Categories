@@ -1,0 +1,28 @@
+.login-forgot {
+  cursor: pointer;
+  transition: 0.1s;
+  color: #eff0e7;
+  opacity: 0.8;
+}
+.login-forgot:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+.login-alternative {
+  margin-top: 1.2rem;
+}
+.login-alternative h3 {
+  margin-bottom: 1rem;
+}
+.login-alternative-img {
+  width: 2.3rem;
+  padding: 0.4rem;
+  background-color: #0f3747;
+  border-radius: 10rem;
+  opacity: 0.95;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.login-alternative-img:hover {
+  opacity: 1;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,24 @@
+//*| Palette
+//Main palette
+$color-1: #05668d;
+$color-2: #028090;
+$color-3: #00a896;
+$color-4: #02c39a;
+$color-5: #e6e7da;
+//Whites and Blacks
+$color-dark-1: #0f3747;
+$color-white-1: #eff0e7;
+$color-white-2: #f4f4ee;
+//Error color
+$color-red: #d33030;
+
+//*| Gradients
+$gradient-1: linear-gradient(to bottom right, $color-3, $color-1);
+
+//*| Animation behaviors
+$cubic-bezier-1: cubic-bezier(0.76, 0, 0.24, 1);
+
+//*| Shadows
+$shadow-1: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$shadow-solid-1: 3px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-solid-2: 2px 3px 0px rgba(0, 0, 0, 0.25);

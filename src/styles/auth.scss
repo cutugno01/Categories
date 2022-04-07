@@ -1,0 +1,214 @@
+@import "./variables.scss";
+
+.auth {
+  background-color: $color-white-1;
+  padding: 1rem 0;
+  border-radius: 15px;
+  text-align: center;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $shadow-1;
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  &-link-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 100;
+    }
+  }
+
+  &-link {
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.1s;
+  }
+
+  &-link:hover {
+    opacity: 1;
+  }
+
+  &-input-wrapper {
+    background: $gradient-1;
+    border-radius: 10px;
+    padding: 1.8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+    margin-top: 1.2rem;
+    box-shadow: $shadow-1;
+  }
+
+  input {
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    opacity: 0.95;
+    box-shadow: 0 0 0;
+    transition: 0.15s;
+    background-color: $color-white-2;
+    width: 18rem;
+  }
+
+  input:focus,
+  input:hover,
+  input.active {
+    outline: none;
+    opacity: 1;
+    box-shadow: $shadow-1;
+  }
+
+  &-input-icon-container {
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 10;
+    display: flex;
+  }
+
+  &-input-icon {
+    width: 1.7rem;
+  }
+
+  &-button {
+    width: 92%;
+    margin-top: 1rem;
+    border: none;
+    padding: 1rem 0;
+    background: $gradient-1;
+    background-size: 300%;
+    background-position: left;
+    border-radius: 10px;
+    color: $color-white-1;
+    box-shadow: $shadow-1;
+    transition: 0.15s, background-position 0.5s;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  &-button:hover {
+    box-shadow: 0 0 0;
+    background-position: right;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $color-dark-1;
+    opacity: 0.8;
+    transition: 0.1s;
+  }
+
+  :focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+
+  &-error-message-container {
+    //background-color: $color-red;
+    width: 92%;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: $shadow-1;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-error-message {
+    color: $color-red;
+    font-weight: 100;
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  &-error-icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    margin-bottom: -4px;
+  }
+
+  // &-addons {
+  //   display: flex;
+  //   font-size: 1rem;
+  //   justify-content: space-between;
+  // }
+
+  // &-remember-me {
+  //   display: flex;
+  // }
+
+  // input[type="checkbox"] {
+  //   /* ...existing styles */
+  //   display: grid;
+  //   place-content: center;
+  //   cursor: pointer;
+  // }
+
+  // input[type="checkbox"]::before {
+  //   content: "";
+  //   width: 0.65em;
+  //   height: 0.65em;
+  //   transform: scale(0);
+  //   transition: 0s transform ease-in-out;
+  //   box-shadow: inset 1em 1em $color-dark-1;
+  //   transform-origin: bottom left;
+  // }
+
+  // input[type="checkbox"]:checked::before {
+  //   transform: scale(1);
+  // }
+
+  //   &-modal {
+  //     min-width: 20rem;
+  //     background-color: $color-5;
+  //     border-radius: 15px;
+
+  //     &-message-container {
+  //       background: $gradient-1;
+  //       margin: 1.2rem;
+  //       border-radius: 10px;
+  //       padding: 2rem 1rem;
+  //     }
+
+  //     &-icon {
+  //       width: 4rem;
+  //       filter: drop-shadow($shadow-solid-1);
+  //     }
+
+  //     &-message {
+  //       color: $color-white-1;
+  //       font-size: 1.4rem;
+  //       max-width: 20rem;
+  //       text-shadow: $shadow-solid-2;
+  //       word-wrap: break-word;
+  //       font-weight: 200;
+  //     }
+  //   }
+}
+
+//*| Media queries
+@media only screen and(max-width: 700px) {
+  .auth {
+    width: 22rem;
+    margin: 2rem 0;
+    input {
+      width: 15rem;
+    }
+  }
+}

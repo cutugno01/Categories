@@ -1,0 +1,139 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.create-input-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.create-input-title-light {
+  color: #f4f4ee;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
+}
+.create-input-title-dark {
+  background: -webkit-linear-gradient(#05668d, #0f3747);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+}
+.create-select {
+  padding: 0.4rem 0.5rem 0.4rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+  transition: 0.15s;
+  font-size: 1rem;
+  background-color: #eff0e7;
+  font-weight: bold;
+}
+.create-select:hover {
+  box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+}
+.create-custom-categories-button, .create-custom-categories-button:hover {
+  opacity: 0.7;
+}
+.create-custom-categories-button.active, .create-custom-categories-button.active:hover {
+  opacity: 1;
+}
+.create-letters {
+  background-color: #e6e7da;
+  border-radius: 15px;
+}
+.create-letters-title {
+  padding: 1rem 1.3rem;
+}
+.create-letters-title u {
+  font-size: 1rem;
+}
+.create-letters-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 24rem;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0 1.5rem 0;
+}
+.create-letter {
+  background: linear-gradient(to bottom right, #00a896, #05668d);
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #eff0e7;
+  opacity: 0.65;
+  box-shadow: 0 0 0 #0f3747;
+  transition: 0.15s;
+}
+.create-letter:hover {
+  box-shadow: 2px 3px 0 #0f3747;
+}
+.create-letter.active {
+  opacity: 1;
+}
+.create-step-buttons {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem 0;
+}
+.create-step-buttons button:nth-child(1) {
+  padding-left: 1rem;
+}
+.create-step-buttons button:nth-child(2) {
+  padding-right: 1rem;
+}
+.create-custom-category {
+  background-color: #e6e7da;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+  transition: 0.15s;
+}
+.create-custom-category.active, .create-custom-category:focus, .create-custom-category:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #eff0e7;
+}
+.create-custom-category::-webkit-input-placeholder {
+  color: #0f3747;
+  opacity: 0.8;
+}
+.create-custom-category-delete {
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  right: 0.5rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #0f3747;
+  padding: 0.5rem;
+  opacity: 0.7;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.1s;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+.create-custom-category-delete:hover {
+  opacity: 1;
+  background-color: #d33030;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-animation: deleteIconRing 2s;
+          animation: deleteIconRing 2s;
+}
+
+@media only screen and (max-width: 700px) {
+  .create-custom-category {
+    max-width: 20rem;
+  }
+}/*# sourceMappingURL=create-game.css.map */
