@@ -20,7 +20,7 @@ const Dashboard = ({
   return (
     <div className="dashboard">
       <h1 className="dashboard-title">
-        Welcome {auth ? user.username : "to Categoryes"}!
+        Welcome {auth ? user.username : "to Categories"}!
       </h1>
       {!auth && (
         <h2 className="dashboard-paragraph">
