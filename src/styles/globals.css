@@ -37,6 +37,9 @@ body * {
 
 body {
   background: linear-gradient(to bottom right, #00a896, #05668d);
+  background-image: url("../assets/BG-shapes/BG_Shape_1.svg"), url("../assets/BG-shapes/BG_Shape_2_shadow.svg"), linear-gradient(to bottom right, #00a896, #05668d);
+  background-blend-mode: multiply, multiply, normal;
+  background-position: bottom left, top right;
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;

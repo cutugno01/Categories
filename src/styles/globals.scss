@@ -47,7 +47,16 @@ body * {
 //*| Body style
 
 body {
-  background: $gradient-1;
+  background: $gradient-1; //For older browsers
+  background-image: url('../assets/BG-shapes/BG_Shape_1.svg'),
+  url('../assets/BG-shapes/BG_Shape_2_shadow.svg'), 
+  //linear-gradient(340deg, $color-2, rgba($color-2, 0) 70%), 
+  //linear-gradient(160deg, $color-3, rgba($color-3, 0) 70%),
+  //linear-gradient(200deg, $color-4, rgba($color-4, 0) 100%),
+  $gradient-1
+  ;
+  background-blend-mode: multiply, multiply, normal;
+  background-position: bottom left, top right;
 //   background: linear-gradient(322deg, 
 //   $color-1, rgba($color-1, 0) 70%),
 // linear-gradient(178deg,
