@@ -10,7 +10,7 @@
 //*---------------------------------------------*\\
 
 //TODO| change the gradient background with the new background in the figma project
-//TODO| DIY: the function handleSetStateValue is repeated multiple times and should become a component.
+//TODO| DRY: the function handleSetStateValue is repeated multiple times and should become a component.
 
 //*| Hooks and Libraries
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
