@@ -3,10 +3,6 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
 
-//*| Styles
-import "../../styles/auth.css";
-import "../../styles/signup.css";
-
 //*| Components
 import Overlay from "../Overlay";
 

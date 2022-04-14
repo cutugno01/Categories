@@ -1,9 +1,6 @@
 //*| Hooks and Libraries
 import { useNavigate } from "react-router";
 
-//*| Styles
-import "../styles/dashboard.css";
-
 const Dashboard = ({
   user,
   auth,

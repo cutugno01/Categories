@@ -1,6 +1,3 @@
-//*| Styles
-import "../styles/globals.css";
-
 const Overlay = ({
   isModalOpen,
   setIsModalOpen,

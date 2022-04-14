@@ -3,10 +3,6 @@ import { FC, useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
 
-//*| Styles
-import "../../styles/auth.css";
-import "../../styles/login.css";
-
 //*| Components
 import GooglePng from "../../assets/img/google-icon-png.png";
 

@@ -6,7 +6,7 @@
 
 //*---------------------------------------------*\\
 //*----------------- npm start -----------------*\\
-//*--- Live Sass Compiler (from Glenn Marks) ---*\\
+//*----------------- node-sass -----------------*\\
 //*---------------------------------------------*\\
 
 //TODO| change the gradient background with the new background in the figma project
@@ -21,7 +21,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 //*| Styles
-import "./styles/globals.css";
+import "./styles/globals.scss";
 
 //*| Components
 import Login from "./components/auth/Login";
@@ -106,8 +106,8 @@ function App() {
       .then((response) => {
         if (response.data.response.type === "SUCCESS") {
           setAuth(true);
-          const responseUsername: any = response.data.data.data.username;
-          const responseId: any = response.data.data.data.ID;
+          const responseUsername: string = response.data.data.data.username;
+          const responseId: number = response.data.data.data.ID;
           console.log(response.data);
           setUser({
             username: responseUsername,

@@ -6,9 +6,6 @@ import { Navigate, useNavigate } from "react-router";
 import CreateFirstStep from "./CreateFirstStep";
 import CreateSecondStep from "./CreateSecondStep";
 
-//*| Styles
-import "../../styles/create-game.css";
-
 const CreateGame = () => {
   const navigate = useNavigate();
 

@@ -1,9 +1,6 @@
 //*| Hooks and Libraries
 import { useState } from "react";
 
-//*| Styles
-import "../styles/lobby.css";
-
 //*| Components
 import Overlay from "./Overlay";
 

@@ -5,7 +5,12 @@
 @import "./variables.scss";
 
 //*| Styles imports
-//@import "./auth.scss";
+@import "./create-game.scss";
+@import "./dashboard.scss";
+@import "./lobby.scss";
+@import "./auth.scss";
+@import "./login.scss";
+@import "./signup.scss";
 
 //*| General rules
 html {
