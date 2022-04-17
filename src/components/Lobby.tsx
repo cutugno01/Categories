@@ -23,7 +23,7 @@ const Lobby = () => {
     maxPlayers: 3,
     players: [
       { id: 0, name: "andre01", leader: true },
-      { id: 1, name: "raffaheh", leader: false },
+      { id: 1, name: "player2", leader: false },
       // { id: 2, name: "raffadawdawdheh", leader: false },
       // { id: 3, name: "rafdawddadwdadawdwadwafaheh", leader: false },
       // { id: 4, name: "raffaheh", leader: false },
